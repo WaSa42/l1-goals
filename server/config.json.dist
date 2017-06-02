@@ -1,6 +1,10 @@
 {
   "database": "mongodb://localhost:27017/l1-goals",
+  "fetch": {
+    "baseUrl": "https://www.googleapis.com",
+    "channelId": "UCQsH5XtIc9hONE1BQjucM0g"
+  },
+  "google": { "apiKey": "googleApiKey" },
   "host": "localhost",
-  "port": 7171,
-  "secret": "secretPhrase"
+  "port": 7171
 }
