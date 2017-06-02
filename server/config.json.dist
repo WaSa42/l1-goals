@@ -1,0 +1,6 @@
+{
+  "database": "mongodb://localhost:27017/l1-goals",
+  "host": "localhost",
+  "port": 7171,
+  "secret": "secretPhrase"
+}
