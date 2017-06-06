@@ -8,7 +8,7 @@ export default (method, endpoint, body) => {
     body.key = apiKey;
 
     console.log(JSON.stringify(body));
-    console.log(`${method.toUpperCase()} request from ${endpoint}...`);
+    console.log(`${method.toUpperCase()} request from ${endpoint}`);
 
     return fetch(baseUrl + serialize(method, endpoint, body), {
         method,
@@ -17,7 +17,7 @@ export default (method, endpoint, body) => {
     })
         .then(response => response.json())
         .then(response => {
-            response.error ? console.error('FAILED:', response.error.message) : console.log('SUCCEED !') ;
+            response.error && console.error('FAILED:', response.error.message) ;
             return response;
         })
         .catch(error => console.error(`FAILED: ${error.message}`));

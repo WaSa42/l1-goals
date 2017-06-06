@@ -1,0 +1,15 @@
+{
+  "name": "l1-goals",
+  "version": "1.0.0",
+  "description": "Fetch goals from L1 youtube channel",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WaSa42/l1-goals.git"
+  },
+  "scripts": {
+    "server": "cd server && npm start",
+    "client": "cd client && npm start"
+  },
+  "author": "Nicolas Rouvière",
+  "license": "ISC"
+}
